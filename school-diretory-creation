@@ -1,0 +1,10 @@
+#!/bin/bash
+#(( ; ; )) is infinate loop
+echo "how many classes are you taking this simester?"
+read num
+for i in $(seq 1 "$num")
+  do
+echo "enter class"
+  read b
+  mkdir -p /home/chris/Documents/school/$b/{notes, homework, powerpoint}
+done

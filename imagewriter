@@ -1,0 +1,7 @@
+#!/bin/bash
+lsblk -f
+echo 'enter input file'
+read $a
+echo 'enter output file'
+read $b
+sudo dd if=/dev/$a of=/dev/$b bs=4M status=progress && sync

@@ -1,0 +1,11 @@
+#!/bin/bash
+echo 'enter string'
+read a
+echo enter 'second string'
+read b
+if [[ $a == $b ]]
+  then
+  echo 'match'
+  else
+    no match
+fi
