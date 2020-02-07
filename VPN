@@ -1,9 +1,12 @@
 #!/bin/bash
+sudo systemctl start windscribe
 windscribe connect
-echo 'end session?'
+echo 'done with session'
 read a
-if [[ $a == 'y' ]]
+if [[ $a == "y" ]]
 then
-windscribe disconnect
-sudo systemctl restart NetworkManager.service
+  windscribe disconnect
+  systemctl restart NetworkManager.service
+else
+  echo 'exited'
 fi
