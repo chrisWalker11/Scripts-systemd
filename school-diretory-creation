@@ -1,5 +1,4 @@
 #!/bin/bash
-#(( ; ; )) is infinate loop
 echo "how many classes are you taking this simester?"
 read num
 for i in $(seq 1 "$num")
