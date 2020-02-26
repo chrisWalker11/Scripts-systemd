@@ -4,7 +4,6 @@ After=suspend.target hibernate.target hybrid-sleep.target
 
 [Service]
 ExecStart=/bin/bash /usr/local/bin/wakeup.sh
-User=root
 
 [Install]
 WantedBy=suspend.target hibernate.target hybrid-sleep.target
