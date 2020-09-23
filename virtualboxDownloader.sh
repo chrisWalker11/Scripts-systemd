@@ -4,7 +4,6 @@ read a
 echo "read number after version number before Linux amd64"
 read b
 
-sudo pkill -9 virtualbox
 
 wget https://download.virtualbox.org/virtualbox/$a/VirtualBox-$a-$b-Linux_amd64.run
 
