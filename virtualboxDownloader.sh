@@ -13,6 +13,3 @@ sudo ./VirtualBox-$a-$b-Linux_amd64.run
 
 rm VirtualBox-$a-$b-Linux_amd64.run
 
-sudo modprobe vboxguest vboxvideo vboxsf
-
-sudo systemctl enable --now vboxservice.service
