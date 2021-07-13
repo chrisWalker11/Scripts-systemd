@@ -1,0 +1,6 @@
+#!/bin/bash
+echo "in what directory are you looking for this"
+read a
+echo "enter name of file"
+read b
+ls -al $a | grep -i $b

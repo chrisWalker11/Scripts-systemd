@@ -1,0 +1,1 @@
+docker run --rm -it -p 7226:7226 vulnerables/web-dvwa

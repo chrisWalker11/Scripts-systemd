@@ -1,0 +1,1 @@
+java -jar -Xmx512m /root/Downloads/Builds/diit-1.5.jar
