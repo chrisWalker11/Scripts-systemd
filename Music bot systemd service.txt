@@ -21,3 +21,5 @@ sudo vim /lib/systemd/system/musicbot.service
 sudo cp /lib/systemd/system/musicbot.service /etc/systemd/system/musicbot.service
 sudo chmod 644 /etc/systemd/system/musicbot.service
 Sudo systemctl enable musicbot
+
+https://computingforgeeks.com/how-to-run-java-jar-application-with-systemd-on-linux/
