@@ -1,0 +1,23 @@
+﻿Music bot systemd service 
+
+
+[Unit]
+Description=musicbot
+
+
+[Service]
+Type=simple
+WorkingDirectory=/home/pi
+ExecStartPre=/bin/sleep 30
+ExecStart=/bin/java -Dnogui=true -jar /home/pi/JMusicBot-0.3.6.jar
+
+
+[Install]
+WantedBy=multi-user.target
+
+
+Commands:
+sudo vim /lib/systemd/system/musicbot.service
+sudo cp /lib/systemd/system/musicbot.service /etc/systemd/system/musicbot.service
+sudo chmod 644 /etc/systemd/system/musicbot.service
+Sudo systemctl enable musicbot
