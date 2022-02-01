@@ -1,0 +1,11 @@
+#!/bin/bash
+echo enter whitelisted username
+read a
+for i in $(grep -v ""$a"\|root" /etc/passwd | awk -F : '{print $1}')
+do
+usermod -s /bin/false $i
+echo $i >> /home/$a/user.txt
+done
+echo $a >> /home/$a/user.txt
+echo root >> /home/$a/user.txt
+cat /etc/passwd
